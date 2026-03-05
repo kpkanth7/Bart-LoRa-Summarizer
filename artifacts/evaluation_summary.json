@@ -1,0 +1,45 @@
+{
+  "baseline_metrics": {
+    "rouge1": 0.36241620515576023,
+    "rouge2": 0.16436850843901218,
+    "rougeL": 0.2706108305305739,
+    "rougeLsum": 0.309796087373448
+  },
+  "lora_metrics": {
+    "eval_loss": 1.703834891319275,
+    "eval_rouge1": 0.3511547677770688,
+    "eval_rouge2": 0.15307192595687213,
+    "eval_rougeL": 0.25429194621114004,
+    "eval_rougeLsum": 0.3151387165208254,
+    "eval_runtime": 717.7582,
+    "eval_samples_per_second": 0.697,
+    "eval_steps_per_second": 0.174,
+    "epoch": 3.0
+  },
+  "comparison": [
+    {
+      "Metric": "ROUGE-1",
+      "Baseline": 0.36241620515576023,
+      "LoRA": 0.3511547677770688,
+      "Improvement": -0.011261437378691452
+    },
+    {
+      "Metric": "ROUGE-2",
+      "Baseline": 0.16436850843901218,
+      "LoRA": 0.15307192595687213,
+      "Improvement": -0.01129658248214005
+    },
+    {
+      "Metric": "ROUGE-L",
+      "Baseline": 0.2706108305305739,
+      "LoRA": 0.25429194621114004,
+      "Improvement": -0.016318884319433846
+    },
+    {
+      "Metric": "ROUGE-Lsum",
+      "Baseline": 0.309796087373448,
+      "LoRA": 0.3151387165208254,
+      "Improvement": 0.005342629147377431
+    }
+  ]
+}

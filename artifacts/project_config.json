@@ -1,0 +1,35 @@
+{
+  "project_name": "abstractive_summarizer_bart_lora",
+  "created_utc": "2026-03-04T18:04:08.174568+00:00",
+  "seed": 42,
+  "dataset": {
+    "id": "abisee/cnn_dailymail",
+    "config": "3.0.0",
+    "splits": [
+      "train",
+      "validation",
+      "test"
+    ],
+    "text_field": "article",
+    "summary_field": "highlights"
+  },
+  "model": {
+    "base_model_id": "facebook/bart-large-cnn",
+    "tokenizer_id": "facebook/bart-large-cnn"
+  },
+  "tokenization": {
+    "max_input_tokens": 1024,
+    "max_target_tokens": 128,
+    "padding": "max_length",
+    "truncation": true
+  },
+  "data_sanity": {
+    "min_article_chars": 200,
+    "min_summary_chars": 30,
+    "scan_sample_n": 5000
+  },
+  "notes": [
+    "Mapping: article -> highlights",
+    "Truncation chosen from token-length EDA sample"
+  ]
+}
